@@ -11,8 +11,8 @@ import "package:rpc/rpc.dart";
 Handler createRpcHandler(ApiServer apiServer) {
   return (Request request) {
     try {
-      var apiRequest = new HttpApiRequest(request.method, request.url.path,
-          request.url.queryParameters, request.headers, request.read());
+      var apiRequest = new HttpApiRequest(request.method, request.requestedUri,
+          request.headers, request.read());
       return apiServer.handleHttpApiRequest(apiRequest).then(
           (apiResponse) {
             return new Response(apiResponse.status, body: apiResponse.body,

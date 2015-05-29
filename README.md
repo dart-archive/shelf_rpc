@@ -1,7 +1,7 @@
 `shelf_rpc` is a Shelf `Handler` for the Dart `rpc` package.
 
 ### Example
-```
+```dart
 import 'package:rpc/rpc.dart';
 import 'package:shelf/shelf_io.dart' as io;
 import 'package:shelf_rpc/shelf_rpc.dart' as shelf_rpc;

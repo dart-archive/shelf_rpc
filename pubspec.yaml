@@ -1,5 +1,5 @@
 name: shelf_rpc
-version: 0.0.3+1
+version: 0.0.3+2
 author: Dart Team <misc@dartlang.org>
 description: RPC package API support for Shelf
 homepage: https://github.com/dart-lang/shelf_rpc
@@ -8,5 +8,5 @@ environment:
   sdk: ">=1.9.0 <2.0.0"
 
 dependencies:
-  shelf: ">=0.5.0 <0.6.0"
+  shelf: ">=0.5.0 <0.7.0"
   rpc: ">=0.5.0 <0.6.0"
